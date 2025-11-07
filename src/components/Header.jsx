@@ -125,17 +125,19 @@ const Header = ({ activeTab, setActiveTab }) => {
         {/* Main Header */}
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-gray-500 to-purple-600 rounded-xl flex items-center justify-center">
-                <SquaresSubtract className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold text-gray-900">SVG Toolkit</h1>
-                <p className="text-xs text-gray-500 hidden sm:block">Complete SVG Solution</p>
-              </div>
-            </div>
-          </div>
+         <div className="flex items-center">
+  <div className="flex items-center space-x-3">
+    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+      <SquaresSubtract className="w-6 h-6 text-white" />
+    </div>
+    <div>
+      <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        SVG-Toolkit
+      </h1>
+      <p className="text-xs text-gray-500 hidden sm:block">Create • Edit • Convert</p>
+    </div>
+  </div>
+</div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-1">
