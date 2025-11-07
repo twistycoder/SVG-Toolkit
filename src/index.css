@@ -9,51 +9,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Browser Scroll Bar Webkit */
+/* Footer */
+@keyframes wiggle {
 
-/* 1. Target the scrollbar as a whole */
-::-webkit-scrollbar {
-  width: 5px;
-  /* Width for vertical scrollbar */
-  height: 10px;
-  /* Height for horizontal scrollbar */
-}
+  0%,
+  100% {
+    transform: rotate(-5deg);
+  } 
 
-/* 2. Target the track (the background) */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  /* Light track for light mode */
-  border-radius: 5px;
-}
-
-/* 3. Target the thumb (the draggable bar) */
-::-webkit-scrollbar-thumb {
-  background: #888888;
-  /* Gray thumb */
-  border-radius: 5px;
-}
-
-/* 4. Thumb hover state (Optional) */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-  /* Darker gray on hover */
-}
-
-/* 5. DARK MODE READY: Adjust colors for dark theme */
-/* Since your site supports dark mode, use media queries */
-@media (prefers-color-scheme: dark) {
-  ::-webkit-scrollbar-track {
-    background: #1f2937;
-    /* Dark gray track (Tailwind gray-800) */
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #4b5563;
-    /* Lighter gray thumb (Tailwind gray-600) */
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: #6b7280;
-    /* Even lighter gray on hover */
+  50% {
+    transform: rotate(5deg);
   }
 }
+
+.wiggle:hover {
+  animation: wiggle 0.3s ease-in-out;
+} 
