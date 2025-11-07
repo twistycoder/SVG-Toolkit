@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
 @import "tailwindcss";
 
 body {
@@ -8,7 +10,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.knewave {
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.wallpoet{
+  font-family: "Wallpoet", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 /* Footer */
 @keyframes wiggle {
 
