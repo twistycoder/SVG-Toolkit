@@ -7,7 +7,7 @@ import {
   Code,
   Palette,
   Zap,
-  Square
+SquaresSubtract
 } from 'lucide-react';
 
 const Footer = () => {
@@ -38,12 +38,12 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                <Palette className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                <SquaresSubtract className="w-6 h-6 text-white" />
               </div>
               <div>
                 <h3 className="text-xl font-bold">SVG Toolkit</h3>
-                <p className="text-gray-400 text-sm">Complete SVG Solution</p>
+                <p className="text-gray-400 text-sm">Create • Edit • Convert</p>
               </div>
             </div>
             <p className="text-gray-400 text-sm mb-6">
